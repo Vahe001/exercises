@@ -42,3 +42,9 @@ function possibleSums(coins, quantity) {
 
 let test1 = possibleSums([10, 50, 100], [1, 2, 1]);
 console.log(test1);
+
+let test2 = possibleSums([10, 20, 30], [1, 1, 1]);
+console.log(test2);
+
+let test3 = possibleSums([10, 20, 30, 40], [1, 1, 1, 1]);
+console.log(test3);
