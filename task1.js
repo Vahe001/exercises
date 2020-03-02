@@ -10,8 +10,8 @@ function containsCloseNums(arr, k) {
 
     arr.forEach((value, index) => {
         if(numObj[`${value}`] === undefined)
-            numObj[`${value}`] = index
-        returnValue = !!(Math.abs(numObj[`${value}`] - index))
+            return numObj[`${value}`] = index
+        returnValue = (Math.abs(numObj[`${value}`] - index) <= k)
 
     });
     return returnValue
@@ -22,3 +22,6 @@ console.log('test1 -->>', test1);
 
 let test2 = containsCloseNums([0, 1, 2, 3, 5, 6], 3);
 console.log('test1 -->>', test2);
+
+let test3 = containsCloseNums([0, 1, 2, 3, 5, 2, 11], 3);
+console.log('test1 -->>', test3);
